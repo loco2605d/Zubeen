@@ -1,0 +1,130 @@
+/* Basic Reset */
+/* Style the nav container to align items */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Pushes links/button to the right */
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    align-items: left;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+
+/* The Button Styling */
+nav button {
+    background-color: #007bff; /* Primary Blue */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Styling the link inside the button */
+nav button a {
+    color: white;
+    margin-right: 0; /* Remove margin for the link inside the button */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+nav button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+nav button:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+}
+
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Background setup */
+    background-video: url('mee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment:local;
+    background-repeat: repeat;
+    
+    /* Typography */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container styling to make text readable over the image */
+h1, p {
+    background: rgba(255, 255, 255, 0.85); /* White background with 85% opacity */
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* Styling the image */
+img {
+    margin-top: 0px;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+.video-container {
+    position: relative; /* Required for positioning child elements absolutely */
+    width: 100%;
+    height: 100vh; /* Makes the container full height of the viewport */
+    overflow: hidden; /* Hides any video overflow */
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ensures the video covers the entire container, like background-size: cover */
+    z-index: -1; /* Puts the video behind other content */
+}
+
+.content {
+    position: relative; /* Places content above the video (which has z-index -1) */
+    z-index: 1;
+    color: white;
+    /* Add more styling to center content and ensure readability */
+    /* Example: background: rgba(0, 0, 0, 0.5); for an overlay */
+}
+
+body{
+    align-content: center;
+    
+}
